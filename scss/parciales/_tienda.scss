@@ -1,0 +1,269 @@
+/*------- Comienzo seccion Tienda -------*/
+
+.seccionTienda {
+    display: block;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+   background-color:#bababa;
+}
+
+/*------- Diseño del Box Producto-------*/
+.Productdiv {
+    display: inline-block;
+    color: black;
+    border-radius: 16px;
+    margin-right: 1%;
+    overflow: hidden;
+    position: relative;
+    width: 320px;
+    height: 450px;
+    margin-bottom: 60px;
+    align-items: center;
+    align-content: center;
+    order: 1;
+    margin-left: 6%;
+    transition:  all 0.5s;
+    @include shadow(12px, 8px);
+    background: #ffffff;
+    border: 2px dotted #b0b0b0;
+
+   }
+
+.Productdiv:hover {
+    box-shadow: #000000;
+    transform: scale(1.05);
+
+}
+
+.productos__precio {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-transform: uppercase;
+    width: auto;
+    display: inline-block;
+    padding: 0.2rem 1rem;
+    border-radius: 12px;
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    margin: 4rem;
+    right: 10px;
+    text-align: center;
+    text-decoration: none;
+    border: 3px dotted black;
+    font-size: 20px;
+}
+/* -------Diseño de Producto Oferta -------*/
+.productos__oferta {
+    background-color: navy;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.5rem;
+    border-radius: 2px;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    margin: 0.5rem;
+}
+.margen {
+    bottom: -100px;
+}
+.Botoncarrito {
+    border-radius: 8px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    margin-left: 18%;
+    font-size: auto;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    position: relative;
+    height: 40px;
+    bottom: -66px;
+    width: 200px;
+    left: 0%;
+    right: 0%;
+    @include shadow(8px, 3px); 
+    
+}
+/*------- Seteo de la Imagen de Producto-------*/
+.imagProduc {
+    width: 100%;
+    height: 37%;
+    object-fit: contain;
+    border-radius: 16px;
+    left: 20%;
+}
+.imag--Produc {
+    width: 15%;
+    height: 37%;
+    object-fit: contain;
+    border-radius: 16px;
+}
+.productos__h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 16px;
+    margin-top: 64px;
+    text-shadow: 1px 1px rgb(255, 255, 255), -5px 0 10px rgb(41, 41, 41);
+}
+.productos__parrafo {
+    color: rgb(45, 45, 45);
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 1px rgb(255, 255, 255), -5px 0 10px rgb(41, 41, 41);
+}
+.productos__h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: rgba(0, 0, 0, 0.999);
+    text-shadow: 1px 1px rgb(255, 255, 255), -5px 0 10px rgb(41, 41, 41);
+}
+
+.grid__Hijo {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0.5rem;
+    @include shadow(10px, 8px);
+    background: #ffffff;
+
+}
+
+.grid__texto {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: $color-primario;
+    padding: 0.8rem 0.8rem;
+    font-size: 1em;
+    font-stretch: normal;
+    border-radius: 15px;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    right: 10%;
+
+}
+
+.categoriaGrid {
+    display: grid;
+    padding: 1rem;
+    min-height: 500px;
+    color: $color-primario;
+    text-decoration: none;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px 350px;
+    gap: 8px;
+    grid-template-areas:
+        "ele1 ele2 ele3 ele4"
+        /*Fila 1*/
+        "ele5 ele6 ele7 ele8"
+        /*Fila 2*/
+    ;
+    transition: all 2s;
+    margin-bottom: 80px;
+}
+
+
+.grid__Hijo {
+    border: 2px solid rgb(155, 155, 155);
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    border-radius: 15px;
+}
+
+.grid__imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: $color-primario;
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px;
+    transition: transform 2s;
+}
+
+.grid__imagen:hover {
+
+    transform: scale(0.8)
+}
+
+.grid__texto {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: $color-primario;
+    padding: 0.8rem 0.8rem;
+    font-size: 1rem;
+    font-stretch: normal;
+    border-radius: 15px;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    right: 10%;
+
+}
+
+.grid__Hijo--1 {
+    grid-area: ele1;
+    object-fit: contain;
+    border-radius: 15px;
+    background-color: $color-primario;
+}
+
+.grid__Hijo--2 {
+    grid-area: ele2;
+    border-radius: 15px;
+    background-color: $color-primario;
+}
+
+.grid__Hijo--3 {
+    grid-area: ele3;
+    border-radius: 15px;
+    background-color: $color-primario;
+}
+
+.grid__Hijo--4 {
+    grid-area: ele4;
+    background-color: $color-primario;
+}
+
+.grid__Hijo--5 {
+    grid-area: ele5;
+    border-radius: 15px;
+    background-color: $color-primario;
+}
+
+.grid__Hijo--6 {
+    grid-area: ele6;
+    border-radius: 15px;
+    background-color: $color-primario;
+}
+
+.grid__Hijo--7 {
+    grid-area: ele7;
+    border-radius: 15px;
+    background-color: $color-primario;
+}
+
+.grid__Hijo--8 {
+    grid-area: ele8;
+    border-radius: 15px;
+    background-color: $color-primario;
+}
+
+.row {
+
+    margin-right: 0 ;
+    margin-left: 0;
+    
+}
+
+

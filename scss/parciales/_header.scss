@@ -1,0 +1,39 @@
+
+.ImagenLogo {
+    align-items: center;
+    align-content: center;
+    z-index: 10;
+    padding: 15px 15px 15px 15px;
+    height: 90px;
+}
+
+/* Diseño del NAV - Enlaces - Lista*/
+.navbar {
+    color: #fff;
+    padding: 1rem;
+    margin-top: 4;
+    order: 1;
+    flex-wrap: nowrap;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+/* ------- Diseño del MAIN-------*/
+
+.mainDiseño {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    background-size: 100%;
+}
+
+.btn {
+
+    font-size: 13px;
+    height: 39px;
+
+}
+
+.nav--item1 {
+
+    text-align: center;
+}
