@@ -11,6 +11,7 @@ Para el proyecto se emplearon las siguientes herramientas:
 * CSS3
 * SASS
 * GITHUB
+* JAVASCRIPT
 
 El proyecto cuenta de 5 Paginas: 
 
@@ -35,15 +36,12 @@ Diseños y Retoques:
 * CorelDRAW 
 * CorelPHOTO Paint
 
-PROYECTO FINAL - CURSADA 37005 - CODERHOUSE
+CARRERA EN CURSO: DESARROLLADOR FULL STACK
 
-CARRERA EN CURSO: 
+1) Desarrollo Web           (FINALIZADO) - Tiempo: 38 Horas - APROBADO - TOP 10 - COMISION: 37005)
 
-DESARROLLADOR FULL STACK
+2) JavaScript               (EN CURSO) - Comision: 43450 - Dictada por el Profesor: Fernando Luna)  
 
-1) Desarrollo Web           (FINALIZADO) - Tiempo de Cursada: 38 Horas - APROBADO - TOP 10)
-2) JavaScript               (EN CURSO)  
 3) ReactJs                  (PENDIENTE) 
+
 4) Programacion Backend     (PENDIENTE)
-
-
