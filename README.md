@@ -1,4 +1,4 @@
-# Proyect-PG-Ruiz
+# Proyecto: Pro Gamer Arg - Cristian Ruiz
 Proyect ProGamerArg - Cristian Ruiz - CODER HOUSE
 
 Proyecto del Curso de Desarrollo Web - Dictado por Coder House 
