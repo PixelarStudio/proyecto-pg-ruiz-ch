@@ -10,13 +10,11 @@ class Compra {
     this.pedido = pedido;
   }
 
-
   cantProductos() {
     if (this.pedido.length > 0) {
       return this.pedido.reduce((total, producto) => total + producto.cantidad, 0);
     }
   }
-
 
   precioTotal() {
     if (this.pedido.length > 0) {
@@ -63,7 +61,7 @@ function comprarProducto() {
 
 function finDeCompra() {
   const mipedido = new Compra(pedido);
-  alert(`El valor total de tu pedido es $${mipedido.precioTotal()}\nCantidad total de productos: ${mipedido.cantProductos()}\n¡Muchas gracias por tu compra!`
+  alert(`El valor total de tu pedido es $ `+ mipedido.precioTotal() +`\nCantidad total de productos: `+ mipedido.cantProductos() +`\n¡Muchas gracias por tu compra!`
   );
 }
 
