@@ -1,8 +1,8 @@
 const pedido = [];
 const productos = [{id: 1, nombre: "AMD RYZEN 7 5700G", desc: "Procesador Amd Ryzen 5700G", precio: 85370, cantidad: 1,},
-                   {id: 2, nombre: "MOUSE GAMER", desc: "Mouse Gamer con 5400 DPI", precio: 17553, cantidad: 1,  },
+                   {id: 2, nombre: "MOUSE GAMER LOGITECH", desc: "Mouse Gamer con 5400 DPI", precio: 17553, cantidad: 1,  },
                    {id: 3, nombre: "AMD RYZEN 5 5600G", desc: "Procesador Amd Ryzen 5700G", precio: 79350, cantidad: 1, },
-                   {id: 4, nombre: "AMD PHANTOM RX 560", desc: "AMD RX 560 4GB GDDR5", precio: 34253, cantidad: 1,},
+                   {id: 4, nombre: "ASUS STRIX RTX 3090 TI 24GB", desc: "Asus Strix RTX 3090 TI de 24 GB GDDR6", precio: 234253, cantidad: 1,},
 ];
 
 class Compra {
