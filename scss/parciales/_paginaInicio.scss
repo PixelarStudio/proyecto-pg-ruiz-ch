@@ -317,3 +317,49 @@
     gap: 25px;
 }
 
+img.logo {
+    display: inline;
+    width: 48px;
+    float: right;
+}
+
+div.header {
+    display: inline;
+}
+
+div.carrito span {
+    font-weight: 700;
+}
+
+.container {
+    gap: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content:center;
+    width: 100%;
+}
+
+button {
+    font-size: 15px;
+    width: 100%x;
+    padding: 0px;
+}
+
+button, button:not(:hover) {
+    background-color: darkslategray;
+    border-color: gray;
+}
+
+button:hover {
+    background-color: darkcyan;
+    color: rgb(43, 5, 255);
+    border-color: lightgray;
+}
+
+button:active {
+    background-color: black;
+    color: whitesmoke;
+    border-color: black;
+}

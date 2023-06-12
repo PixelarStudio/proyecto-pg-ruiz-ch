@@ -300,9 +300,9 @@
         margin-right: 1%;
         overflow: hidden;
         position: relative;
-        width: 320px;
-        height: 450px;
-        margin-bottom: 60px;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
         align-items: center;
         align-content: center;
         order: 1;
@@ -311,7 +311,7 @@
         @include shadow(12px, 8px);
         background: #ffffff;
         border: 2px dotted #b0b0b0;
-    
+        gap: 30px;
        }
 
        .productos__h1 {
@@ -370,22 +370,7 @@
     .margen {
         bottom: -100px;
     }
-    .Botoncarrito {
-        border-radius: 8px;
-        text-align: center;
-        background-color: rgb(0, 0, 0);
-        margin-left: 15%;
-        font-size: auto;
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-        position: relative;
-        height: 40px;
-        bottom: -66px;
-        width: 200px;
-        left: 0%;
-        right: 0%;
-        box-shadow: 2px 2px rgb(0, 0, 0), -2px 0 10px rgb(41, 41, 41);
-    }
+
     /*------- Seteo de la Imagen de Producto-------*/
     .imagProduc {
         display: flex;

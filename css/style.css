@@ -751,6 +751,53 @@ html {
   gap: 25px;
 }
 
+img.logo {
+  display: inline;
+  width: 48px;
+  float: right;
+}
+
+div.header {
+  display: inline;
+}
+
+div.carrito span {
+  font-weight: 700;
+}
+
+.container {
+  gap: 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+button {
+  font-size: 15px;
+  width: 100% x;
+  padding: 0px;
+}
+
+button, button:not(:hover) {
+  background-color: darkslategray;
+  border-color: gray;
+}
+
+button:hover {
+  background-color: darkcyan;
+  color: rgb(43, 5, 255);
+  border-color: lightgray;
+}
+
+button:active {
+  background-color: black;
+  color: whitesmoke;
+  border-color: black;
+}
+
 :root {
   --animate-delay: 2s;
 }
@@ -772,15 +819,14 @@ html {
 }
 
 /*------- Diseño del Box Producto-------*/
-.Productdiv {
+.productDiv {
   display: inline-block;
   color: black;
   border-radius: 16px;
-  margin-right: 1%;
   overflow: hidden;
   position: relative;
-  width: 320px;
-  height: 450px;
+  width: 290px;
+  height: 380px;
   margin-bottom: 60px;
   align-items: center;
   align-content: center;
@@ -834,25 +880,6 @@ html {
 
 .margen {
   bottom: -100px;
-}
-
-.Botoncarrito {
-  border-radius: 8px;
-  text-align: center;
-  background-color: rgb(0, 0, 0);
-  margin-left: 18%;
-  font-size: auto;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  position: relative;
-  height: 40px;
-  bottom: -66px;
-  width: 200px;
-  left: 0%;
-  right: 0%;
-  border-radius: 8px;
-  background: linear-gradient(225deg, #ffffff, #c0c0c0);
-  box-shadow: 3px 3px 6px #777777, -3px -3px 6px #ffffff;
 }
 
 /*------- Seteo de la Imagen de Producto-------*/
@@ -1285,9 +1312,9 @@ html {
     margin-right: 1%;
     overflow: hidden;
     position: relative;
-    width: 320px;
-    height: 450px;
-    margin-bottom: 60px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
     align-items: center;
     align-content: center;
     order: 1;
@@ -1298,6 +1325,7 @@ html {
     box-shadow: 8px 8px 16px #777777, -8px -8px 16px #ffffff;
     background: #ffffff;
     border: 2px dotted #b0b0b0;
+    gap: 30px;
   }
   .productos__h1 {
     font-size: 1.7rem;
@@ -1349,22 +1377,6 @@ html {
   }
   .margen {
     bottom: -100px;
-  }
-  .Botoncarrito {
-    border-radius: 8px;
-    text-align: center;
-    background-color: rgb(0, 0, 0);
-    margin-left: 15%;
-    font-size: auto;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    position: relative;
-    height: 40px;
-    bottom: -66px;
-    width: 200px;
-    left: 0%;
-    right: 0%;
-    box-shadow: 2px 2px rgb(0, 0, 0), -2px 0 10px rgb(41, 41, 41);
   }
   /*------- Seteo de la Imagen de Producto-------*/
   .imagProduc {
@@ -1857,8 +1869,8 @@ html {
     border-radius: 16px;
     overflow: hidden;
     position: relative;
-    width: 90%;
-    height: 450px;
+    width: 100%;
+    height: 100%;
     margin-bottom: 60px;
     order: 1;
     transition: all 1.5s;
@@ -1870,6 +1882,7 @@ html {
     align-items: center;
     justify-content: center;
     margin-left: 10px;
+    gap: 30px;
   }
   .ProductdivTienda {
     display: inline-block;
@@ -1930,20 +1943,6 @@ html {
     right: 10px;
     top: 0px;
     margin: 1rem;
-  }
-  .Botoncarrito {
-    border-radius: 8px;
-    text-align: center;
-    background-color: rgb(0, 0, 0);
-    font-size: 15px;
-    justify-content: center;
-    align-content: center;
-    height: 35px;
-    bottom: -76px;
-    width: 100%;
-    margin-left: 0px;
-    box-shadow: 2px 2px rgb(0, 0, 0), -2px 0 10px rgb(41, 41, 41);
-    color: black;
   }
   .productos__h2 {
     font-size: 22px;

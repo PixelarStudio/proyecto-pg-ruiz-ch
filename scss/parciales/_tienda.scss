@@ -9,15 +9,14 @@
 }
 
 /*------- Diseño del Box Producto-------*/
-.Productdiv {
+.productDiv {
     display: inline-block;
     color: black;
     border-radius: 16px;
-    margin-right: 1%;
     overflow: hidden;
     position: relative;
-    width: 320px;
-    height: 450px;
+    width: 290px;
+    height: 380px;
     margin-bottom: 60px;
     align-items: center;
     align-content: center;
@@ -70,23 +69,7 @@
 .margen {
     bottom: -100px;
 }
-.Botoncarrito {
-    border-radius: 8px;
-    text-align: center;
-    background-color: rgb(0, 0, 0);
-    margin-left: 18%;
-    font-size: auto;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    position: relative;
-    height: 40px;
-    bottom: -66px;
-    width: 200px;
-    left: 0%;
-    right: 0%;
-    @include shadow(8px, 3px); 
-    
-}
+
 /*------- Seteo de la Imagen de Producto-------*/
 .imagProduc {
     width: 100%;
