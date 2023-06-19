@@ -21,7 +21,9 @@
   <link rel="stylesheet" href="./css/style.css.map" />
   <link rel="stylesheet" href="./scss/style.css" />
   <link rel="stylesheet" href="./scss/style.css.map" />
-  <script defer src="js/index.js"></script>
+  <script defer src="js/index.js"></script> 
+  <script defer src="js/productos.js"></script> 
+  <script defer src="js/mensajes.js"></script>
 </head>
 
 <body>
@@ -84,38 +86,22 @@
           <h5 class="mouse__Pad">CON TU PRIMERA COMPRA! TE ENVIAMOS UN MOUSE PAD DE PRO GAMER GRATIS !!! </h5>
         </div>
       </div>
-      <!-- Cajas Envios -->
-      <div class="container">
-        <div class="row gap col-12 col-md-6">
-          <div class="cajaShadow-1 cajaShadow--1">
-            <i class="fa-solid fa-truck"></i>
-            <h3 class="h3_detalle">ENVIOS A TODO EL PAIS</h3>
-            <p class="p_detalle">Se realizan envios a todo el territorio nacional</p>
-          </div>
+      
+    <section id="buscarSection">
+        <h2 class="productos__h1 animate__animated animate__pulse">BUSQUEDA DE PRODUCTOS</h2>
+        <input type="text" id="busquedaInput" placeholder="Ingresa el Nombre del Producto: MOUSE, AMD, INTEL, MONITOR, MOTHER, RTX, RADEON, Etc...">
+        <button class="botonBuscar" id="buscarBtn">Buscar</button>
+    </section>
 
-          <div class="cajaShadow-1 cajaShadow--1">
-            <i class="fa-solid fa-wallet"></i>
-            <h3 class="h3_detalle">PAGO RAPIDO Y SEGURO</h3>
-            <p class="p_detalle">TODOS TUS PAGOS SON 100% SEGUROS</p>
-          </div>
-
-          <div class="cajaShadow-1 cajaShadow--1">
-            <i class="fa-solid fa-percent"></i>
-            <h3 class="h3_detalle">DESCUENTOS EXCLUSIVOS</h3>
-            <p class="p_detalle">EN PRODUCTOS SELECCIONADOS</p>
-          </div>
-          
-          <div class="cajaShadow-1 cajaShadow--1">
-            <i class="fa-solid fa-headset"></i>
-            <h3 class="h3_detalle">ASESORAMIENTO PERSONALIZADO</h3>
-            <p class="p_detalle">ATENCION DIRECTA POR LOS CANALES DE ATENCION</p>
-          </div>
-        </div>
-      </div>
-      <!-- Comienzo PC GAMER -->
-      <section class="container-fluid seccionInicio">
-        <h2 class="productos__h1 animate__animated animate__pulse">PC GAMER</h2>
+    <section class="container-fluid seccionInicio">
+      <h2 class="productos__h1 animate__animated animate__pulse">LISTA DE PRODUCTOS ELEGIDOS</h2>
+      <div id="carritoContainer"></div>
+      <div class="mensajes"></div>
+        <h2 class="productos__h1 animate__animated animate__pulse">RESULTADO BUSQUEDA</h2>
         <div class="container" id="container"></div>
+
+
+
 
   </main>
 

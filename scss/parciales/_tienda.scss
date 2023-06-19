@@ -26,13 +26,11 @@
     @include shadow(12px, 8px);
     background: #ffffff;
     border: 2px dotted #b0b0b0;
+    }
 
-   }
-
-.Productdiv:hover {
+.productDiv:hover {
     box-shadow: #000000;
     transform: scale(1.05);
-
 }
 
 .productos__precio {

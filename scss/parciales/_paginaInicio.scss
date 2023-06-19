@@ -363,3 +363,75 @@ button:active {
     color: whitesmoke;
     border-color: black;
 }
+.mensajes {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    height: 46px;
+    width: 70%;
+    background-color: darkslateblue;
+    color: rgb(0, 0, 0);
+    font-weight: bold; 
+    border-radius: 6px;
+    margin-bottom: 30px;
+    @include shadow(12px, 8px);
+}
+#buscarSection {
+    display: inline-block;
+    width: 70%;
+    margin-bottom: 20px;
+    border: 1px white solid;
+    padding: 30px;
+    margin-top: 60px;
+}
+#busquedaInput {
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.botonBuscar {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    height: 30px;
+    width: 200px;
+    border-radius: 8px;
+    background: linear-gradient(225deg, #ffffff, #c0c0c0);
+    box-shadow: 3px 3px 6px #777777, -3px -3px 6px #ffffff;
+}
+
+//carrito 
+
+
+#carritoContainer {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: linear-gradient(225deg, #ffffff, #c0c0c0);
+    box-shadow: 3px 3px 6px #777777, -3px -3px 6px #ffffff;
+    margin-bottom: 100px;
+    width:auto;
+    height: auto;
+}
+
+.carritoItem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 890px;
+}
+
+.carritoItem img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.carritoItem p {
+    margin: 0;
+}
+.total {
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: bold;
+
+}
