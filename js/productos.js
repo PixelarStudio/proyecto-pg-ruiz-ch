@@ -3,7 +3,7 @@ const productos = [{ id: 1, nombre: "AMD RYZEN 7 5700G CON VIDEO INTEGRADO",  pr
                    { id: 2, nombre: "MOUSE GAMER LOGITECH G502 SE HERO",  precio: 17553, img: './imagenes/Mouse3.png' },
                    { id: 3, nombre: "AMD RYZEN 5 5600G CON VIDEO INTEGRADO",  precio: 79350, img: './imagenes/pg-r5700g.jpeg' },
                    { id: 4, nombre: "PLAY STATION 5 300GB + 2 JUEGOS ", precio: 334253, img: './imagenes/consolas.jpg' },
-                   { id: 5, nombre: "DISCO EXTERNO 2TB WESTERN DIGITAL", precio: 64253, img: './imagenes/DISCOEXTERNO.jpEg' },
+                   { id: 5, nombre: "DISCO EXTERNO 2TB WESTERN DIGITAL", precio: 64253, img: './imagenes/DiscoExterno.jpeg' },
                    { id: 6, nombre: "AIR COORLER CPU REFRIGERACION LIQUIDA", precio: 134253, img: './imagenes/Coolers.jpeg' },
                    { id: 7, nombre: "MODEM 4 ANTENAS ROUTER WI-FI", precio: 21322, img: './imagenes/conctividad.jpeg' },
                    { id: 8, nombre: "NOTEBOOK 15,6' i5 8GB DDR4 512GB NVME", precio: 355403, img: './imagenes/notebook.jpeg' },
