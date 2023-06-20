@@ -2,21 +2,23 @@ const container = document.querySelector("#container");
 const buscarBtn = document.querySelector("#buscarBtn");
 const busquedaInput = document.querySelector("#busquedaInput");
 const carritoContainer = document.querySelector("#carritoContainer");
+const vaciarCarritoBtn = document.querySelector('#vaciarCarritoBtn');
 
 function cardReturn(producto) {
   return `<div class="productDiv">
-             <h3 class="productos__h2">${producto.nombre}</h3>
-             <img src="${producto.img}" class="imagProduc" alt="...">
-             <p class="productos__precio">$ ${producto.precio}</p>
-             <button class="botonCarrito" id="boton${producto.id}">Comprar</button>
-        </div>`;
+  <h3 class="productos__h2">${producto.nombre}</h3>
+  <img src="${producto.img}" class="imagProduc" alt="...">
+  <p class="productos__precio">$ ${producto.precio}</p>
+  <button class="botonCarrito" id="boton${producto.id}">Comprar</button>
+  </div>`;
 }
 
 function cargarProductos() {
-  container.innerHTML = "";
-  productos.forEach((producto) => {
-    container.innerHTML += cardReturn(producto);
-  });
+    container.innerHTML = "";
+    productos.forEach((producto) => {
+        container.innerHTML += cardReturn(producto);
+    });
+    cargarProductos();
 }
 
 function agregarAlCarrito(producto) {
@@ -39,12 +41,11 @@ function mostrarProductosCarrito() {
                 <p><b>ID:</b> ${producto.id}</p>
                 <p><b>NOMBRE:</b>${producto.nombre}</p>
                 <p><b>PRECIO $</b>${producto.precio}</p>
-           </div>
-           `;
+           </div>`;
       total += producto.precio;
     });
   } else {
-    carritoDetalle = "El carrito está vacío.";
+    carritoDetalle = "<b>El carrito está vacío.</b>";
   }
   carritoDetalle += `<p class="total" >TOTAL: $ ${total}</p>`;
   carritoContainer.innerHTML = carritoDetalle;
@@ -54,6 +55,7 @@ function vaciarCarrito() {
     localStorage.removeItem('carrito');
     mostrarProductosCarrito();
 }
+vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
 
 buscarBtn.addEventListener("click", () => {
   const searchTerm = busquedaInput.value.toLowerCase().trim();
@@ -70,7 +72,5 @@ buscarBtn.addEventListener("click", () => {
   }
 });
 
-vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
 
-cargarProductos();
-mostrarProductosCarrito();
+
