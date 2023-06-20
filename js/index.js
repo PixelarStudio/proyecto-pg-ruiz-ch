@@ -36,9 +36,9 @@ function mostrarProductosCarrito() {
       carritoDetalle += `
             <div class="carritoItem">
                 <img src="${producto.img}" alt="...">
-                <p><b>ID: </b> ${producto.id}</p>
-                <p><b>NOMBRE: </b>${producto.nombre}</p>
-                <p><b>PRECIO $ </b> ${producto.precio}</p>
+                <p><b>ID:</b> ${producto.id}</p>
+                <p><b>NOMBRE:</b>${producto.nombre}</p>
+                <p><b>PRECIO $</b>${producto.precio}</p>
            </div>
            `;
       total += producto.precio;
@@ -54,7 +54,7 @@ buscarBtn.addEventListener("click", () => {
   const searchTerm = busquedaInput.value.toLowerCase().trim();
   const resultados = productos.filter((producto) =>
     producto.nombre.toLowerCase().includes(searchTerm));
-    
+
   if (resultados.length > 0) {
     container.innerHTML = "";
     resultados.forEach((producto) => {

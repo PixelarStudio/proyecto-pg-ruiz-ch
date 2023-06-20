@@ -128,10 +128,10 @@
   }
   
 .productos__h1 {
-    font-size: 1.7rem;
+    font-size: 30px;
     text-align: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     color: rgba(255, 255, 255, 0.999);
     text-shadow: 1px 1px rgb(99, 99, 99), -5px 0 10px rgb(41, 41, 41);
 }
@@ -147,8 +147,9 @@
 
 /* CATEGORIA GRID */
 .seccionInicio {
-    width: 100%;
+    width: 80%;
     background-color: #bababa;
+    border: 1px solid white;
 
 }
 
@@ -369,7 +370,6 @@ button:active {
     padding: 10px;
     height: 46px;
     width: 70%;
-    background-color: darkslateblue;
     color: rgb(0, 0, 0);
     font-weight: bold; 
     border-radius: 6px;
@@ -380,9 +380,9 @@ button:active {
     display: inline-block;
     width: 70%;
     margin-bottom: 20px;
-    border: 1px white solid;
+    border: 1px white dotted;
     padding: 30px;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 #busquedaInput {
     margin-right: 10px;
@@ -399,6 +399,15 @@ button:active {
     box-shadow: 3px 3px 6px #777777, -3px -3px 6px #ffffff;
 }
 
+#elegidosSection {
+    display: inline-block;
+    width: 70%;
+    margin-bottom: 20px;
+    border: 0.5px white dotted;
+    padding: 30px;
+    margin-top: 30px;
+}
+
 //carrito 
 
 
@@ -408,30 +417,35 @@ button:active {
     padding: 10px;
     background: linear-gradient(225deg, #ffffff, #c0c0c0);
     box-shadow: 3px 3px 6px #777777, -3px -3px 6px #ffffff;
-    margin-bottom: 100px;
     width:auto;
     height: auto;
 }
 
 .carritoItem {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    width: 890px;
+    justify-content: space-around;
+    margin-bottom: 10px;    
+    width: auto;
+    text-align: left;
+    align-items: flex-start;
+    background-color: #bebebe;
+    padding: 10px;
 }
 
 .carritoItem img {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     margin-right: 10px;
 }
 
 .carritoItem p {
-    margin: 0;
+    display: flex;
+    margin: 0px;
 }
 .total {
     display: flex;
     flex-direction: row-reverse;
     font-weight: bold;
+    font-size: 1.1rem;
 
 }
