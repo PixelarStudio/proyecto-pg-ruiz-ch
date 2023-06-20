@@ -50,6 +50,11 @@ function mostrarProductosCarrito() {
   carritoContainer.innerHTML = carritoDetalle;
 }
 
+function vaciarCarrito() {
+    localStorage.removeItem('carrito');
+    mostrarProductosCarrito();
+}
+
 buscarBtn.addEventListener("click", () => {
   const searchTerm = busquedaInput.value.toLowerCase().trim();
   const resultados = productos.filter((producto) =>
@@ -65,4 +70,7 @@ buscarBtn.addEventListener("click", () => {
   }
 });
 
+vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
+
 cargarProductos();
+mostrarProductosCarrito();
