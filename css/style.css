@@ -2400,8 +2400,9 @@ button:active {
   width: auto;
   text-align: left;
   align-items: flex-start;
-  background-color: #bebebe;
+  background-color: white;
   padding: 10px;
+  border: 1px rgb(88, 88, 88) dotted;
 }
 
 .carritoItem img {
@@ -2413,6 +2414,8 @@ button:active {
 .carritoItem p {
   display: flex;
   margin: 0px;
+  text-decoration: none;
+  text-align: left;
 }
 
 .total {
