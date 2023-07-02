@@ -2440,6 +2440,15 @@ button:active {
   box-shadow: 3px 3px 6px #777777, -3px -3px 6px #ffffff;
 }
 
+.carritoItem button {
+  margin: 0 5px;
+}
+
+.fa-trash {
+  background-color: white;
+  font-size: 1.5em;
+}
+
 .total {
   display: flex;
   flex-direction: row-reverse;
@@ -2448,9 +2457,47 @@ button:active {
 }
 
 .eliminarBtn {
-  background-color: #ff0000;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  height: 30px;
+  width: 200px;
+  border-radius: 8px;
+  background: linear-gradient(225deg, #ffffff, #c0c0c0);
+  box-shadow: 3px 3px 6px #777777, -3px -3px 6px #ffffff;
   cursor: pointer;
+}
+
+.finalizar-compra {
+  margin-top: 10px;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  height: 30px;
+  width: 200px;
+  border-radius: 8px;
+  background: linear-gradient(225deg, #ffffff, #c0c0c0);
+  box-shadow: 3px 3px 6px #777777, -3px -3px 6px #ffffff;
+  cursor: pointer;
+}
+
+body.swal2-shown > [aria-hidden=true] {
+  transition: 0.05s filter;
+  filter: blur(10px);
+}
+
+#contador-carrito {
+  color: yellow;
+}
+
+.fa-cart-shopping {
+  color: white;
+  font-size: 25px;
+}
+
+.text-body {
+  background-color: rgba(0, 0, 0, 0.801);
+}
+
+.nav-link {
+  background-color: rgba(0, 0, 0, 0);
 }/*# sourceMappingURL=style.css.map */
