@@ -16,13 +16,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  />
   <script src="https://kit.fontawesome.com/088b4b5c76.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- Vinculacion del CSS al HTML  -->
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/style.css.map" />
   <link rel="stylesheet" href="./scss/style.css" />
   <link rel="stylesheet" href="./scss/style.css.map" />
   <script defer src="js/index.js"></script> 
-  <script defer src="js/productos.js"></script> 
   <script defer src="js/mensajes.js"></script>
 </head>
 
@@ -91,6 +91,7 @@
         <h2 class="productos__h1 animate__animated animate__pulse">BUSQUEDA DE PRODUCTOS</h2>
         <input type="text" id="busquedaInput" placeholder="Ingresa el Nombre del Producto: MOUSE, AMD, INTEL, MONITOR, MOTHER, RTX, RADEON, Etc...">
         <button class="botonBuscar" id="buscarBtn">Buscar</button>
+        <div class="containerSearch" id="container"></div>
     </section>
 
     <section id="elegidosSection">
@@ -102,7 +103,6 @@
 
     <h2 class="productos__h1 animate__animated animate__pulse">RESULTADO BUSQUEDA</h2>
     <div class="mensajes"></div>
-        <div class="container" id="container"></div>
 
 
   </main>

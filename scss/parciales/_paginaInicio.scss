@@ -341,6 +341,16 @@ div.carrito span {
     justify-content:center;
     width: 100%;
 }
+.containerSearch {
+    gap: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content:center;
+    width: 100%;
+    padding: 30px;
+}
 
 button {
     font-size: 15px;

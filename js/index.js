@@ -6,11 +6,11 @@ const vaciarCarritoBtn = document.querySelector('#vaciarCarritoBtn');
 
 function cardReturn(producto) {
   return `<div class="productDiv">
-  <h3 class="productos__h2">${producto.nombre}</h3>
-  <img src="${producto.img}" class="imagProduc" alt="...">
-  <p class="productos__precio">$ ${producto.precio}</p>
-  <button class="botonCarrito" id="boton${producto.id}">Comprar</button>
-  </div>`;
+              <h3 class="productos__h2">${producto.nombre}</h3>
+              <img src="${producto.img}" class="imagProduc" alt="Imagen Ilustrativa">
+              <p class="productos__precio">$ ${producto.precio}</p>
+              <button class="botonCarrito" id="boton${producto.id}">Comprar</button>
+          </div>`;
 }
 
 function cargarProductos() {
@@ -18,7 +18,6 @@ function cargarProductos() {
     productos.forEach((producto) => {
         container.innerHTML += cardReturn(producto);
     });
-    cargarProductos();
 }
 
 function agregarAlCarrito(producto) {
@@ -26,6 +25,21 @@ function agregarAlCarrito(producto) {
   carrito.push(producto);
   localStorage.setItem("carrito", JSON.stringify(carrito));
   mostrarProductosCarrito();
+  Swal.fire({
+    title: 'Agregado al Carrito!',
+    text: `Agregaste ${producto.nombre} correctamente.`,
+    imageUrl: `${producto.img}`,
+    imageWidth: 250,
+    imageHeight: 250,
+    imageAlt: 'Imagen de Producto',
+    showClass: {
+      popup: 'animate__animated animate__fadeInDown'
+    },
+    hideClass: {
+      popup: 'animate__animated animate__fadeOutUp'
+    }
+    
+  })
 }
 
 function mostrarProductosCarrito() {
@@ -54,6 +68,26 @@ function mostrarProductosCarrito() {
 function vaciarCarrito() {
     localStorage.removeItem('carrito');
     mostrarProductosCarrito();
+    let timerInterval
+  Swal.fire({
+  title: 'Vaciando Carrito!',
+  html: 'El carrito se vaciara en <b></b> milisegundos.',
+  timer: 2000,
+  timerProgressBar: true,
+  didOpen: () => {
+    Swal.showLoading()
+    const b = Swal.getHtmlContainer().querySelector('b')
+    timerInterval = setInterval(() => {
+      b.textContent = Swal.getTimerLeft()
+    }, 100)
+  },
+  willClose: () => {
+    clearInterval(timerInterval)
+  }
+}).then((result) => {
+  if (result.dismiss === Swal.DismissReason.timer) {
+  }
+})
 }
 vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
 

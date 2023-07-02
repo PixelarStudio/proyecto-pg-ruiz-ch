@@ -1,0 +1,152 @@
+[
+    {
+        "id": "1",
+        "nombre": "AMD RYZEN 7 5700G CON VIDEO INTEGRADO",
+        "img": "/imagenes/pg-r5700g.jpeg",
+        "precio": 85370
+    },
+    {
+        "id": "2",
+        "nombre": "MOUSE GAMER LOGITECH G502 SE HERO",
+        "img": "./imagenes/Mouse3.png",
+        "precio": 17553
+    },
+    {
+        "id": "3",
+        "nombre": "AMD RYZEN 5 5600G CON VIDEO INTEGRADO",
+        "img": "./imagenes/pg-r5700g.jpeg",
+        "precio": 79350
+    },
+    {
+        "id": "4",
+        "nombre": "PLAY STATION 5 300GB + 2 JUEGOS ",
+        "img": "./imagenes/consolas.jpg",
+        "precio": 334253
+    },
+    {
+        "id": "5",
+        "nombre": "DISCO EXTERNO 2TB WESTERN DIGITAL",
+        "img": "./imagenes/DiscoExterno.jpeg",
+        "precio": 64253
+    },
+    {
+        "id": "6",
+        "nombre": "AIR COORLER CPU REFRIGERACION LIQUIDA",
+        "img": "./imagenes/Coolers.jpeg",
+        "precio": 134253
+    },
+    {
+        "id": "7",
+        "nombre": "MODEM 4 ANTENAS ROUTER WI-FI",
+        "img": "./imagenes/conctividad.jpeg",
+        "precio": 21322
+    },
+    {
+        "id": "8",
+        "nombre": "NOTEBOOK 15,6' i5 8GB DDR4 512GB NVME",
+        "img": "./imagenes/notebook.jpeg",
+        "precio": 355403
+    },
+    {
+        "id": "9",
+        "nombre": "CAMARA PHILIPS P406 1080P FULL HD",
+        "img": "./imagenes/PHILIPS-P406-FHD-1080P-USB.png",
+        "precio": 25403
+    },
+    {
+        "id": "10",
+        "nombre": "MOTHER ASUS X570 TUF GAMMING",
+        "img": "./imagenes/MOTHERASUSX570TUF-GAMMING.png",
+        "precio": 125403
+    },
+    {
+        "id": "11",
+        "nombre": "MOTHER MSI H310M PRO VDH PLUS",
+        "img": "./imagenes/MSI-H310M-PRO-VDH.png",
+        "precio": 28403
+    },
+    {
+        "id": "12",
+        "nombre": "GABINETE MSI MAG FORCE 2 AM4",
+        "img": "./imagenes/MSI-MAGFORCE2.png",
+        "precio": 35403
+    },
+    {
+        "id": "13",
+        "nombre": "DISCO INTERNO NVME WESTERN DIGITAL 1TB",
+        "img": "./imagenes/nvme-wd.png",
+        "precio": 55403
+    },
+    {
+        "id": "14",
+        "nombre": "DISCO INTERNO KINGSTON SSD 240GB",
+        "img": "./imagenes/SSD240GB-KINGSTON-SA400S.png",
+        "precio": 21403
+    },
+    {
+        "id": "15",
+        "nombre": "GABINETE THERMALTAKE RYZEN V200 + COOLERS",
+        "img": "./imagenes/TT-RYZEN-V200.png",
+        "precio": 35403
+    },
+    {
+        "id": "16",
+        "nombre": "MONITOR SAMSUNG LED 34 PULGADAS J5505",
+        "img": "./imagenes/MONITOR-SAMSUNG.jpg",
+        "precio": 355403
+    },
+    {
+        "id": "17",
+        "nombre": "INTEL CORE I9 12700K 12 GENERACION",
+        "img": "./imagenes/INTEL222.jpg",
+        "precio": 175403
+    },
+    {
+        "id": "18",
+        "nombre": "MOUSE PAD GX CON RGB + USB 30X60",
+        "img": "./imagenes/Mouse-Pad.jpeg",
+        "precio": 21403
+    },
+    {
+        "id": "19",
+        "nombre": "DISCO INTERNO SSD NETAC 512 GB 7200RPM",
+        "img": "./imagenes/PG-SSD.jpeg",
+        "precio": 49563
+    },
+    {
+        "id": "20",
+        "nombre": "MOUSE GAMER EVGA 6000 DPI ULTRA",
+        "img": "./imagenes/Mouse.png",
+        "precio": 35403
+    },
+    {
+        "id": "21",
+        "nombre": "MOUSE GAMER GX 5400 DPI POWER",
+        "img": "./imagenes/mouse1.jpg",
+        "precio": 295403
+    },
+    {
+        "id": "22",
+        "nombre": "RTX 3080 TI 12 GB TUF GAMING",
+        "img": "./imagenes/Gpu7.jpeg",
+        "precio": 535403
+    },
+    {
+        "id": "23",
+        "nombre": "AMD RADEON ASROCK RX6600XT 8 GB",
+        "img": "./imagenes/Gpu1.png",
+        "precio": 235403
+    },
+    {
+        "id": "24",
+        "nombre": "AMD RADEON GIGABYTE RX6800XT 16 GB",
+        "img": "./imagenes/Gpu5.png",
+        "precio": 412803
+    },
+    {
+        "id": "25",
+        "nombre": "RTX 3080 TI 12 GB EVGA FTW3 ULTRA",
+        "img": "./imagenes/Gpu3.jpeg",
+        "precio": 655403
+    }
+]
