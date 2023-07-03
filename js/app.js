@@ -87,20 +87,19 @@ if (botonFinalizar) {
 }
 
 async function finalizarCompra() {
-    const steps = ['1', '2']
-    const Queue = Swal.mixin({
-        progressSteps: steps,
+    const pasos = ['1', '2']
+    const finCompra = Swal.mixin({
+        progressSteps: pasos,
         confirmButtonText: 'Siguiente >',
-        // optional classes to avoid backdrop blinking between steps
         showClass: { backdrop: 'swal2-noanimation' },
         hideClass: { backdrop: 'swal2-noanimation' }
     })
-    await Queue.fire({
+    await finCompra.fire({
         title: 'Compra finalizada con éxito! Muchas gracias por tu compra!',
         currentProgressStep: 0,
         showClass: { backdrop: 'swal2-noanimation' },
     })
-    await Queue.fire({
+    await finCompra.fire({
         title: 'ProGamerArg agradece por su Visita!',
         currentProgressStep: 2,
         confirmButtonText: 'OK',
