@@ -45,6 +45,7 @@ function vaciarCarrito() {
   })
 }
 vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
+
 buscarBtn.addEventListener("click", () => {
   const searchTerm = busquedaInput.value.toLowerCase().trim();
   const resultados = productos.filter((producto) =>

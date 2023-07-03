@@ -16,10 +16,10 @@ Para el proyecto se emplearon las siguientes herramientas:
 El proyecto cuenta de 5 Paginas: 
 
 1) index.html (Inicio) 
-2) tienda.html (Tienda)
-3) arma-tu-pc.html (Arma Tu Pc)
-4) contacto.html (Contacto) 
-5) nosotros.html (Nosotros) 
+2) tienda.html (Tienda) Disabled
+3) arma-tu-pc.html (Arma Tu Pc) Disabled
+4) contacto.html (Contacto) Disabled
+5) nosotros.html (Nosotros) Disabled 
 
 Se realizo la estructura mediante el uso de: 
 
@@ -31,16 +31,30 @@ Se realizo la estructura mediante el uso de:
 * Fontawesome
 * jam-icons
 
+
 Diseños y Retoques: 
 
 * CorelDRAW 
 * CorelPHOTO Paint
 
+JavaScript: 
+
+* SweetAlert2
+* DOM
+* Fetch 
+* Async - Await
+* forEach - Find - Filter 
+* Funciones y Eventos
+* Condicionales IF - ELSE
+* Uso de JSON 
+* localStorage
+* Entre otros. 
+
 CARRERA EN CURSO: DESARROLLADOR FULL STACK
 
 1) Desarrollo Web           (FINALIZADO) - Tiempo: 38 Horas - APROBADO - TOP 10 - COMISION: 37005)
 
-2) JavaScript               (EN CURSO) - Comision: 43450 - Dictada por el Profesor: Fernando Luna)  
+2) JavaScript               (FINALIZADO) - Comision: 43450 - Dictada por el Profesor: Fernando Luna - Finalizado Entrega Proyecto Final)  
 
 3) ReactJs                  (PENDIENTE) 
 

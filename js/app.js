@@ -2,13 +2,13 @@ const URL = "js/productos.json"
 const carrito = [];
 const productos = [];
 
-async function getProcutosAsync() {
+async function getProductosAsync() {
     const response = await fetch(URL)
     const data = await response.json()
     productos.push(...data)
     cargarProductos()
 }
-getProcutosAsync()
+getProductosAsync()
 
 function mostrarProductosCarrito() {
     let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
@@ -50,7 +50,6 @@ function agregarAlCarrito(producto) {
         carrito.push(producto);
     }
     localStorage.setItem("carrito", JSON.stringify(carrito));
-    mostrarProductosCarrito();
     Swal.fire({
         title: 'Agregado al Carrito!',
         text: `Agregaste ${producto.nombre} correctamente.`,
@@ -65,6 +64,13 @@ function agregarAlCarrito(producto) {
             popup: 'animate__animated animate__fadeOutUp'
         }
     })
+    mostrarProductosCarrito();
+}
+
+function eliminarProducto(event) {
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    carrito.splice(event.target.dataset.index, 1);
+    localStorage.setItem("carrito", JSON.stringify(carrito));
     mostrarProductosCarrito();
 }
 
@@ -104,11 +110,3 @@ async function finalizarCompra() {
     mostrarProductosCarrito();
 }
 mostrarProductosCarrito();
-
-function eliminarProducto(event) {
-    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-    carrito.splice(event.target.dataset.index, 1);
-    localStorage.setItem("carrito", JSON.stringify(carrito));
-    mostrarProductosCarrito();
-}
-
