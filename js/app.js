@@ -109,4 +109,3 @@ async function finalizarCompra() {
     localStorage.removeItem("carrito");
     mostrarProductosCarrito();
 }
-mostrarProductosCarrito();
