@@ -2,7 +2,7 @@
     {
         "id": "1",
         "nombre": "AMD RYZEN 7 5700G CON VIDEO INTEGRADO",
-        "img": "/imagenes/pg-r5700g.jpeg",
+        "img": "./imagenes/pg-r5700g.jpeg",
         "precio": 85370
     },
     {

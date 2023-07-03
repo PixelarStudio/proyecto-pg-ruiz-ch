@@ -411,6 +411,8 @@ button:active {
 
 #elegidosSection {
     display: inline-block;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     width: 70%;
     margin-bottom: 20px;
     border: 0.5px white dotted;
@@ -492,7 +494,8 @@ button:active {
     box-shadow: 3px 3px 6px #777777, -3px -3px 6px #ffffff;
     cursor: pointer;
 }
-.finalizar-compra {
+
+#finalizarCompraBtn {
     margin-top: 10px;
     font-size: 16px;
     color: rgb(0, 0, 0);

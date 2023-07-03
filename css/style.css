@@ -2387,6 +2387,8 @@ button:active {
 
 #elegidosSection {
   display: inline-block;
+  flex-direction: row-reverse;
+  justify-content: space-between;
   width: 70%;
   margin-bottom: 20px;
   border: 0.5px white dotted;
@@ -2468,7 +2470,7 @@ button:active {
   cursor: pointer;
 }
 
-.finalizar-compra {
+#finalizarCompraBtn {
   margin-top: 10px;
   font-size: 16px;
   color: rgb(0, 0, 0);
