@@ -95,12 +95,12 @@ async function finalizarCompra() {
         hideClass: { backdrop: 'swal2-noanimation' }
     })
     await finCompra.fire({
-        title: 'Compra finalizada con éxito! Muchas gracias por tu compra!',
+        title: '<b>Compra finalizada con éxito!</b> Muchas gracias por tu compra!',
         currentProgressStep: 0,
         showClass: { backdrop: 'swal2-noanimation' },
     })
     await finCompra.fire({
-        title: 'ProGamerArg agradece por su Visita!',
+        title: '<b>ProGamerArg</b> agradece por su Visita!',
         currentProgressStep: 2,
         confirmButtonText: 'OK',
         showClass: { backdrop: 'swal2-noanimation' },

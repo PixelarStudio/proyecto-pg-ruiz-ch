@@ -48,6 +48,7 @@ JavaScript:
 * Condicionales IF - ELSE
 * Uso de JSON 
 * localStorage
+* Operador Ternario
 * Entre otros. 
 
 CARRERA EN CURSO: DESARROLLADOR FULL STACK

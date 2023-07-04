@@ -48,14 +48,8 @@ vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
 
 buscarBtn.addEventListener("click", () => {
   const searchTerm = busquedaInput.value.toLowerCase().trim();
-  const resultados = productos.filter((producto) =>
+  const resultados = productos.filter((producto) =>  
     producto.nombre.toLowerCase().includes(searchTerm));
-  if (resultados.length > 0) {
-    container.innerHTML = "";
-    resultados.forEach((producto) => {
-      container.innerHTML += cardReturn(producto);
+
+    container.innerHTML = resultados.length > 0 ? resultados.map(producto => cardReturn(producto)).join("") : "<b>No se encontraron productos.</b>";
     });
-  } else {
-    container.innerHTML = "No se encontraron productos.";
-  }
-});
